@@ -1,0 +1,22 @@
+<html>
+  <head>
+
+  </head>
+    <title>전적검색</title>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <form method="get" name="search_form" action="{% url 'score:search_result' %}" >
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="소환사명" name="search_text"  value="{{search_text}}">
+                     <span class="input-group-btn">
+                          <button class="btn btn-secondary" type="submit">검색</button>
+                    </span>
+                      </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

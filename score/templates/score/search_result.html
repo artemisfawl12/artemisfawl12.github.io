@@ -1,0 +1,37 @@
+{% load static %}
+<html>
+  <head>
+    <h1>result:</h1>
+  </head>
+    <title>전적검색</title>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <form method="get" name="search_form" action="{% url 'score:search_result' %}" >
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="소환사명" name="search_text"  value="{{search_text}}">
+                     <span class="input-group-btn">
+                          <button class="btn btn-secondary" type="submit">검색</button>
+                    </span>
+                      </div>
+                  </form>
+            </div>
+        </div>
+
+
+                포인트: {{ matchres.0}}<br>
+                포인트: {{ matchres.1 }}<br>
+                포인트: {{ matchres.2 }}<br>
+                포인트: {{ matchres.3 }}<br>
+                포인트: {{ matchres.4 }}<br>
+                포인트: {{ matchres.5 }}<br>
+                포인트: {{ matchres.6 }}<br>
+                포인트: {{ matchres.7 }}<br>
+                포인트: {{ matchres.8 }}<br>
+                포인트: {{ matchres.9 }}<br>
+
+    </div>
+
+  </body>
+</html>
